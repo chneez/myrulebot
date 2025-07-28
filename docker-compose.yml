@@ -1,0 +1,8 @@
+version: '3.8'
+services:
+  rulebot:
+    build: .
+    container_name: rulebot
+    restart: always
+    env_file:
+      - .env
